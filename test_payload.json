@@ -1,0 +1,14 @@
+{
+  "finding_id": "MOCK-NODE-001",
+  "language": "JavaScript",
+  "rule_id": "javascript.lang.security.audit.path-traversal.path-traversal",
+  "severity": "ERROR",
+  "function_length": 28,
+  "cyclomatic_complexity": 5,
+  "file_size_lines": 380,
+  "pr_changed_lines": 12,
+  "historical_rule_fp_rate": 0.1,
+  "file_churn_90d": 14,
+  "repo_finding_density_per_1k_loc": 4.1,
+  "pr_change_code": "async function download(req, res) {\n    const file = req.params.name;\n    const path = baseDir + \"/\" + file;\n    res.sendFile(path);\n}"
+}
